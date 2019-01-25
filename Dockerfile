@@ -8,7 +8,7 @@ RUN a2enmod rewrite expires include
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends openssh-server \
-    && echo "root:Docker!" | chpasswd
+    && echo "root:Docker! test changes from github" | chpasswd
 	
 COPY sshd_config /etc/ssh/	
 
